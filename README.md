@@ -32,7 +32,7 @@ mistakes don't repeat.
 ## Install
 
 ```
-/plugin marketplace add <owner>/dirigent-skills
+/plugin marketplace add alexgrebeshok-coder/dirigent-skills
 /plugin install dirigent-skills@dirigent-skills
 ```
 
