@@ -17,6 +17,18 @@ produce business documents that meet a fixed formatting standard.
 | [`docx-analytical-ru`](skills/docx-analytical-ru/SKILL.md) | Russian analytical documents (docx/pptx) — due diligence, comparative analysis, partner profiles, bordered tables, no table of contents. |
 | [`team-worklog`](skills/team-worklog/SKILL.md) | Shared append-only ledger across engines/agents — read the state before starting, log meaningful steps and failures as you go. |
 
+## Before / after
+
+You ask an agent for something outside its comfort zone.
+
+**Without:** it improvises by hand, learns nothing, and next week the same task
+is improvised again — differently.
+
+**With `skill-lifecycle`:** it checks the catalog first (0.1s), searches the world
+if the catalog is empty, creates a skill when the task will repeat — and converts
+every substantive mistake into a skill after one occurrence. Skills accumulate;
+mistakes don't repeat.
+
 ## Install
 
 ```
