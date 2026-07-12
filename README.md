@@ -16,6 +16,8 @@ produce business documents that meet a fixed formatting standard.
 | [`docx-ru`](skills/docx-ru/SKILL.md) | Russian business documents (docx/pdf) to a fixed formatting standard — Times New Roman, «Оглавление», a pre-send checklist. |
 | [`docx-analytical-ru`](skills/docx-analytical-ru/SKILL.md) | Russian analytical documents (docx/pptx) — due diligence, comparative analysis, partner profiles, bordered tables, no table of contents. |
 | [`team-worklog`](skills/team-worklog/SKILL.md) | Shared append-only ledger across engines/agents — read the state before starting, log meaningful steps and failures as you go. |
+| [`npm-publish-smoke`](skills/npm-publish-smoke/SKILL.md) | Post-publish registry smoke — a release is done only after the published artifact runs in a clean environment; catches the silent-bin/symlink class of bugs local tests never see. |
+| [`merge-conflict-resolution`](skills/merge-conflict-resolution/SKILL.md) | Resolve conflict blocks, never replace files — the `checkout --theirs` and greedy-regex traps that silently eat auto-merged lines, plus three mandatory checks before commit. |
 
 ## Before / after
 
