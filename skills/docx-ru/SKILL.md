@@ -6,7 +6,8 @@ description: >-
   contract appendices, counterparty document packages. Триггеры (RU) — «сделай docx»,
   «оформи документ», «деловой текст», «собери комплект», «выгрузи в word/PDF». Always
   applies a fixed Russian business formatting standard: Times New Roman, black text,
-  Russian terminology, «Оглавление» (not "Table of Contents"), a pre-send checklist.
+  Russian terminology, «Оглавление» (not "Table of Contents"), a pre-send checklist. Do NOT use for analytical/DD documents with semantic table formatting — use docx-analytical-ru.
+license: MIT
 ---
 
 # Russian business documents (DOCX/PDF)

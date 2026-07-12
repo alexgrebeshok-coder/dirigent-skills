@@ -1,4 +1,4 @@
-# klod-skills
+# dirigent-skills
 
 Agent-operations skills for Claude Code: find/acquire/create the right skill instead of
 guessing, keep GitHub issues in sync with what actually happened, design a loop before
@@ -20,8 +20,8 @@ produce business documents that meet a fixed formatting standard.
 ## Install
 
 ```
-/plugin marketplace add <owner>/klod-skills
-/plugin install klod-skills@klod-skills
+/plugin marketplace add <owner>/dirigent-skills
+/plugin install dirigent-skills@dirigent-skills
 ```
 
 Then `/reload-plugins` if your session was already running.

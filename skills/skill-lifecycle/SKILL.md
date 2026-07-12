@@ -1,6 +1,7 @@
 ---
 name: skill-lifecycle
 description: Use when solving any non-trivial task in this ecosystem — before doing it by hand; when skill matching returns weak/none; when a used skill misfired or felt inadequate; when the same class of task keeps coming back; when tempted to say "there's no skill for this, I'll just do it by hand". Триггеры (RU) — «найди скилл», «нет подходящего скилла», «сделаю руками», повторная задача одного класса, провал скилла.
+license: MIT
 ---
 
 # Skill Lifecycle
@@ -51,6 +52,18 @@ Nothing suitable exists in the world → create it. **REQUIRED SUB-SKILL:** `sup
 ## Stage 4 — IMPROVE (data-driven)
 
 `--stats` surfaces a candidate (fail≥2 and fail>ok) → re-read its SKILL.md against the fail notes, improve it against the checklist, re-run the verification scenario. Improving a skill = editing a skill ⇒ the `writing-skills` Iron Law applies.
+
+## Stage 5 — HARVEST (reap lessons from shared memory)
+
+Mistakes that live only in the log get repeated. Regularly (weekly review / after a major task) pull failures and lessons from your shared ledger — e.g. `npx samemind ledger status` (open failures) and recent `fail`-events — or run `tools/skill-match.mjs --harvest` if your team logs to a journal it can read.
+
+Owner-grade thresholds:
+
+- **A substantive mistake needs to happen only ONCE.** A behavior/method error (lost lines in a merge resolve, skipped post-release smoke, false "done", a skill's blind spot) → convert immediately: IMPROVE the existing skill (if it's that skill's blind spot) or CREATE a new one. The three questions are not needed — the mistake itself already answered "yes" on the cost of repetition.
+- **External failures don't count.** server errors, network timeouts, a crashed service — that's not a skill lesson; it gets a fix/retry, not a skill.
+- **Neutral lessons** (a discovery without a mistake) — go through the three questions as usual.
+
+A lesson converted into a skill never repeats on any engine; a lesson left as a log entry repeats on the next one. One repetition is the maximum you allow yourself.
 
 ## Rationalizations — don't say these to yourself
 

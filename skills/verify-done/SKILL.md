@@ -1,6 +1,7 @@
 ---
 name: verify-done
 description: Use before claiming any task is finished or telling the user "done". Триггеры (RU) — момент завершения работы, перед словами «сделал/готово/работает». Enforces verification-before-completion — run the actual check (tests, build, the command, open the file) and read its real output before reporting done. Applies to code AND to documents/configs.
+license: MIT
 ---
 
 # Verify before "done"

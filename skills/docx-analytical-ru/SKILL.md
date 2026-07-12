@@ -6,7 +6,8 @@ description: >-
   No pandoc table of contents; bordered tables with background-fill semantics; two
   tones (internal / external). Триггеры (RU) — «аналитика», «DD», «due diligence»,
   «сравнительный», «пояснительная записка», «профиль партнёра», «таблицы с рамками»,
-  «без оглавления».
+  «без оглавления». Do NOT use for simple business letters/memos — use docx-ru.
+license: MIT
 ---
 
 # Analytical documents (docx / pptx)

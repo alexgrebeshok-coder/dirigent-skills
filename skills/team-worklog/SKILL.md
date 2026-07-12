@@ -7,6 +7,7 @@ description: >-
   the context. Триггеры (RU) — «worklog», «летопись», «журнал работ», «что делалось / на
   какой стадии», перед началом задачи, при сбое, при сдаче. Cross-engine shared journal
   for teams running several AI engines/agents against the same codebase or project.
+license: MIT
 ---
 
 # Team worklog — a shared append-only ledger across engines

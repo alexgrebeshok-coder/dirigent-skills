@@ -1,6 +1,7 @@
 ---
 name: looper
-description: Use BEFORE launching any loop — /loop, a background agent, or an autonomous /goal run. Триггеры — «спроектируй цикл», «собери loop harness», «перед тем как зациклить», «зациклить задачу», «автономный прогон», «/goal», «запусти в цикле», «крути пока не готово». Designs the loop harness first so the loop knows what «done» means, can't overrun its token budget, and is verified independently. Outputs a portable harness spec artifact + ASCII diagram + ready-to-run launch command. Plain `/loop` runs a loop; `looper` designs it.
+description: Use BEFORE launching any loop — /loop, a background agent, or an autonomous run. Триггеры (RU) — «спроектируй цикл», «зациклить задачу», «автономный прогон», «крути пока не готово», «запусти в цикле». Also triggers on "design a loop", "loop harness", "run until done". Do NOT use for a single re-run of a command — only for recurring/autonomous execution. Plain `/loop` runs a loop; `looper` designs it first.
+license: MIT
 ---
 
 # LOOPER — проектирование цикла до запуска
