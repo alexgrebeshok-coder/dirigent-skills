@@ -1,0 +1,9 @@
+{
+  "name": "klod-skills",
+  "version": "0.1.0",
+  "description": "Agent-operations skills: skill-lifecycle router, GitHub issues bridge, loop-harness designer, verify-before-done discipline, Russian business documents, cross-engine worklog.",
+  "author": {
+    "name": "Aleksandr Grebeshok",
+    "url": "https://github.com/alexgrebeshok-coder"
+  }
+}

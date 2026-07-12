@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "klod-skills",
+  "description": "Agent-operations skills: skill discovery/lifecycle router, GitHub issues bridge, loop-harness designer, verification discipline, Russian business documents, cross-engine worklog.",
+  "owner": {
+    "name": "Aleksandr Grebeshok",
+    "url": "https://github.com/alexgrebeshok-coder"
+  },
+  "plugins": [
+    {
+      "name": "klod-skills",
+      "description": "Skill-lifecycle router (match/acquire/create/improve), GitHub issues manager (W-label/parent-epic/Project sync), loop-harness designer, verify-before-done discipline, Russian business docx/pptx, cross-engine worklog ledger.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
