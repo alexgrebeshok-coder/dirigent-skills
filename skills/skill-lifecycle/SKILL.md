@@ -60,6 +60,7 @@ Mistakes that live only in the log get repeated. Regularly (weekly review / afte
 Owner-grade thresholds:
 
 - **A substantive mistake needs to happen only ONCE.** A behavior/method error (lost lines in a merge resolve, skipped post-release smoke, false "done", a skill's blind spot) → convert immediately: IMPROVE the existing skill (if it's that skill's blind spot) or CREATE a new one. The three questions are not needed — the mistake itself already answered "yes" on the cost of repetition.
+- **Reproducibility gate — when the mistake involves a tool or the environment.** A tool refusal, permissions, config, version, sandbox: before CREATE/IMPROVE from a single occurrence, first reproduce the failure or find a second independent witness in the ledger. A one-off, unreproduced environment failure codified into a skill becomes learned helplessness — agents will route around a healthy tool forever (precedent: hermes-agent#6051, where a transient failure was captured as "this tool doesn't work" and the avoidance outlived the fix). No repro and no second witness → record it as a candidate (a note / `--gaps`) and convert on its second appearance. A purely behavioral mistake (no environment involved) needs no gate — the once-threshold stands.
 - **External failures don't count.** server errors, network timeouts, a crashed service — that's not a skill lesson; it gets a fix/retry, not a skill.
 - **Neutral lessons** (a discovery without a mistake) — go through the three questions as usual.
 
