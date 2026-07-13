@@ -17,7 +17,8 @@ produce business documents that meet a fixed formatting standard.
 | [`docx-analytical-ru`](skills/docx-analytical-ru/SKILL.md) | Russian analytical documents (docx/pptx) — due diligence, comparative analysis, partner profiles, bordered tables, no table of contents. |
 | [`team-worklog`](skills/team-worklog/SKILL.md) | Shared append-only ledger across engines/agents — read the state before starting, log meaningful steps and failures as you go. |
 | [`npm-publish-smoke`](skills/npm-publish-smoke/SKILL.md) | Post-publish registry smoke — a release is done only after the published artifact runs in a clean environment; catches the silent-bin/symlink class of bugs local tests never see. |
-| [`merge-conflict-resolution`](skills/merge-conflict-resolution/SKILL.md) | Resolve conflict blocks, never replace files — the `checkout --theirs` and greedy-regex traps that silently eat auto-merged lines, plus three mandatory checks before commit. |
+| [`merge-conflict-resolution`](skills/merge-conflict-resolution/SKILL.md) | Resolve conflict blocks, never replace files — the `checkout --theirs` and greedy-regex traps that silently eat auto-merged lines, three mandatory checks before commit, and the acceptance-merge pre-flight/post-push discipline. |
+| [`worktree-dispatch`](skills/worktree-dispatch/SKILL.md) | Isolation dies in the prompt, not the runner — write dispatch prompts for worktree-isolated agents so that no command walks them back into the main checkout. |
 
 ## Before / after
 

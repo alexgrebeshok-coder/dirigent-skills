@@ -52,6 +52,26 @@ grep -Fxvf <resolved-file> /tmp/outside   # must print NOTHING; every printed li
 
 Only after all three: `git add` + commit. If you resolved during a review/приёмка of someone else's merge — run the same three checks on their result; a clean status is not evidence.
 
+## Acceptance merges — merging someone's finished branch
+
+Same discipline, different trap: here nothing conflicts, so nothing *feels* dangerous. Two real incidents in one:
+
+**Pre-flight (before any merge command):**
+```bash
+git -C "$R" status --short          # whose tree is this? CLEAN? In multi-agent setups the
+                                    # checkout may belong to a LIVE agent mid-task — uncommitted
+                                    # files here mean STOP, not stash.
+git -C "$R" branch --show-current   # you merge INTO where HEAD points. If it's not the target
+                                    # branch, checkout first — a merge "into main" executed on
+                                    # someone's work-branch lands there silently and looks fine.
+```
+
+**Post-push (after any push):**
+```bash
+git -C "$R" ls-remote origin <target-branch>   # compare to local SHA yourself
+```
+The push command's own output is not evidence: `Everything up-to-date` prints on a no-op push (wrong branch pushed = nothing rejected, nothing transferred, success-looking output, remote unchanged). Report the ls-remote SHA, not the push output.
+
 ## Rationalizations — heard in real incidents
 
 | Excuse | Reality |
@@ -69,3 +89,5 @@ Only after all three: `git add` + commit. If you resolved during a review/при
 - Declaring a merge done having checked only `git status` / `git log`
 - No pre-resolution copy and no `checkout -m` recovery before verifying
 - Accepting an executor's merge because their report says "conflicts resolved"
+- Typing a merge command without knowing what `branch --show-current` says
+- Reporting a push as done based on the push command's output instead of `ls-remote`
