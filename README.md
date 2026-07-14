@@ -1,9 +1,12 @@
 # dirigent-skills
 
-Agent-operations skills for Claude Code: find/acquire/create the right skill instead of
-guessing, keep GitHub issues in sync with what actually happened, design a loop before
-you launch it, never say "done" without checking, and (for Russian-speaking teams)
-produce business documents that meet a fixed formatting standard.
+**Curated orchestration pack** for multi-agent systems (Claude Code plugin).
+
+Director-pattern, skill lifecycle, shared worklog, verify-before-done contracts, loop
+harness design, worktree-safe dispatch — battle-tested on a **9-engine production fleet**.
+
+Also includes: GitHub issues bridge, merge-conflict safety, post-publish smoke, and
+(for Russian-speaking teams) business/analytical docx skills to a fixed formatting standard.
 
 ## Skills
 

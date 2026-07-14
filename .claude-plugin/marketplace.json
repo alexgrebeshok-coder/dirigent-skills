@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "dirigent-skills",
-  "description": "Agent-operations skills: skill discovery/lifecycle router, GitHub issues bridge, loop-harness designer, verification discipline, Russian business documents, cross-engine worklog.",
+  "description": "Curated orchestration pack for multi-agent systems: director-pattern, skill lifecycle, shared worklog, verify-contracts, loop harness — battle-tested on a 9-engine fleet.",
   "owner": {
     "name": "Aleksandr Grebeshok",
     "url": "https://github.com/alexgrebeshok-coder"
@@ -9,9 +9,31 @@
   "plugins": [
     {
       "name": "dirigent-skills",
-      "description": "Skill-lifecycle router (match/acquire/create/improve), GitHub issues manager (W-label/parent-epic/Project sync), loop-harness designer, verify-before-done discipline, Russian business docx/pptx, cross-engine worklog ledger.",
+      "version": "0.2.0",
+      "description": "Curated orchestration pack: skill-lifecycle router, team worklog ledger, verify-before-done, looper (loop harness design), worktree-dispatch contracts, merge-conflict safety, npm publish smoke, GitHub issues manager, plus Russian business/analytical docx skills.",
       "source": "./",
-      "category": "productivity"
+      "category": "productivity",
+      "author": {
+        "name": "Aleksandr Grebeshok",
+        "url": "https://github.com/alexgrebeshok-coder"
+      },
+      "homepage": "https://github.com/alexgrebeshok-coder/dirigent-skills",
+      "repository": "https://github.com/alexgrebeshok-coder/dirigent-skills",
+      "license": "MIT",
+      "keywords": [
+        "orchestration",
+        "multi-agent",
+        "director-pattern",
+        "worklog",
+        "verify-done",
+        "skill-lifecycle",
+        "claude-code"
+      ],
+      "tags": [
+        "orchestration",
+        "multi-agent",
+        "operations"
+      ]
     }
   ]
 }
