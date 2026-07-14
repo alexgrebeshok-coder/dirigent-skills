@@ -1,9 +1,25 @@
 {
   "name": "dirigent-skills",
-  "version": "0.1.0",
-  "description": "Agent-operations skills: skill-lifecycle router, GitHub issues bridge, loop-harness designer, verify-before-done discipline, Russian business documents, cross-engine worklog.",
+  "version": "0.2.0",
+  "description": "Curated orchestration pack for multi-agent fleets: director-pattern, skill lifecycle, shared worklog, verify-before-done contracts, loop harness design, worktree-safe dispatch — battle-tested on a 9-engine production fleet.",
   "author": {
     "name": "Aleksandr Grebeshok",
     "url": "https://github.com/alexgrebeshok-coder"
-  }
+  },
+  "homepage": "https://github.com/alexgrebeshok-coder/dirigent-skills",
+  "repository": "https://github.com/alexgrebeshok-coder/dirigent-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agent-skills",
+    "orchestration",
+    "multi-agent",
+    "director-pattern",
+    "worklog",
+    "verify-done",
+    "skill-lifecycle",
+    "loop-harness",
+    "worktree",
+    "productivity"
+  ]
 }
